@@ -44,8 +44,8 @@ public class UserServiceTest {
             User user = userService.getAllUsers().get(0);
 
             if (!testName.equals(user.getName())
-                    || !testLastName.equals(user.getLastName())
-                    || testAge != user.getAge()
+                || !testLastName.equals(user.getLastName())
+                || testAge != user.getAge()
             ) {
                 Assert.fail("User был некорректно добавлен в базу данных");
             }
